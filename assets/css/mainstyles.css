@@ -8,6 +8,9 @@
     list-style: none;
 }
 
+/* Home section */
+
+
 /* About section */
 .about__container {
     margin-top: 10%;
@@ -564,7 +567,6 @@ img {
     margin-bottom: 30px;
     padding: 32px 16px;
     border-radius: 4px;
-    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
