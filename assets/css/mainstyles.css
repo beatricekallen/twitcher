@@ -15,7 +15,7 @@
   
 .about__container h2 {
     font-size: 52px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     text-align: center;
 }
   
@@ -113,7 +113,6 @@
     position: relative;
     width: 50%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
     float: right;
     box-sizing: border-box;
 }
@@ -203,6 +202,81 @@
     border-color: #e91e63;
 }
 
+/* Resource section */
+.resource__container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.resource__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resource__column {
+    width: 100%;
+    padding: 0 16px 16px 16px;
+    text-align: center;
+}
+
+.resource__card {
+    width: 100%;
+    height: 100%;
+    padding: 32px 24px;
+    background: linear-gradient(#ffffff 50%, #24262b 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    transition: 0.5s;
+}
+
+.resource__container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 16px 0;
+}
+
+.resource__container p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.48px;
+}
+
+.resource__icon {
+    background-color: #24262b;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.resource__card:hover {
+    background-position: 0 100%;
+}
+
+.resource__card:hover .resource__icon {
+    background-color: #ffffff;
+    color: #24262b;
+}
+
+.resource__card:hover h3 {
+    color: #ffffff;
+}
+
+.resource__card:hover p {
+    color: #f0f0f0;
+}
+
 /* Blog section */
 .blog {
     display: flex;
@@ -218,10 +292,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.blog__heading span {
-    color: #24262b;
 }
 
 .blog__heading h3 {
@@ -555,7 +625,20 @@
 	background-color: #ffffff;
 }
 
+/* Media queries */
+
+/* Small screens */
+
+/* Medium screens */
 @media (max-width: 768px) {
+    .resource__container {
+        padding: 0 32px;
+    }
+    .resource__column {
+        flex: 0 50%;
+        max-width: 50%;
+    }
+
     .event__container {
         height: 100%;
         background-position: center;
@@ -622,3 +705,16 @@
         margin-bottom: 30px;
     }
 }
+
+/* Large screens */
+@media (min-width: 990px) {
+    .resource__container {
+        padding: 12px 48px;
+    }
+    .resource__column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/* Larger screens */
