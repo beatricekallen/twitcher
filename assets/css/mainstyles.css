@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Event section */
@@ -66,7 +68,6 @@
 }
 
 .event__container .events ul li {
-    list-style: none;
     background: #fff;
     box-sizing: border-box;
     height: 200px;
@@ -129,7 +130,6 @@
 
 .event__container .events ul li .event__details a {
     display: inline-block;
-    text-decoration: none;
     padding: 10px 15px;
     border: 2px solid #262626;
     margin-top: 15px;
@@ -141,6 +141,102 @@
     background: #e91e63;
     color: #fff;
     border-color: #e91e63;
+}
+
+/* Blog section */
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blog__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog__heading span {
+    color: #24262b;
+}
+
+.blog__heading h3 {
+    font-size: 38.4px;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.blog__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.blog__box {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    margin: 20px; 
+}
+
+.blog__img {
+    width: 100%;
+    height: auto;
+}
+
+.blog__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog__text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__text span {
+    color: #f33c3c;
+    font-size: 14.4px;
+}
+
+.blog__text .blog__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.blog__text .blog__title:hover {
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.blog__text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.blog__text a {
+    color: #0f0f0f;
+}
+
+.blog__text a:hover {
+    color: #f33c3c;
+    transition: all ease 0.3s;
 }
 
 /* Footer */
@@ -197,7 +293,6 @@ ul{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #ffffff;
-	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
 	display: block;
@@ -279,6 +374,14 @@ ul{
     }
     .event__container .events ul li .event__details a {
         padding: 5px 10px;
+    }
+
+    .blog {
+        padding: 20px;
+    }
+    .blog__box {
+        margin: 20px 10px;
+        width: 100%;
     }
 
     .footer-col {
