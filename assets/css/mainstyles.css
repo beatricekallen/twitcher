@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Event section */
+.event__container {
+    width: 100%;
+    height: 100vh;
+    background: url();
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.event__container .leftbox {
+    width: 50%;
+    height: 100%; 
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.event__container .leftbox .event__content {
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    padding: 40px;
+    transition: .5s;
+}
+
+.event__container .leftbox .event__content:hover {
+    background: #e91e63;
+}
+
+.event__container .leftbox .event__content h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.event__container .leftbox .event__content .event__p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.event__container .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    float: right;
+    box-sizing: border-box;
+}
+
+.event__container .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.event__container .events ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+}
+
+.event__container .events ul li .event__date {
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transform: .5s;
+}
+
+.event__container .events ul li:hover .event__date {
+    background: #e91e63;
+}
+
+.event__container .events ul li .event__date h4 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    line-height: 30px;
+}
+
+.event__container .events ul li .event__date h4 span {
+    font-size: 30px;
+}
+
+.event__container .events ul li .event__details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.event__container .events ul li .event__details h3 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.event__container .events ul li .event__details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.event__container .events ul li .event__details a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.event__container .events ul li .event__details a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
+@media (max-width: 768px) {
+    .event__container {
+        height: 100%;
+        background-position: center;
+    }
+    .event__container .leftbox {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    .event__container .events {
+        width: 100%;
+        height: auto;
+        background: transparent;
+        float: none;
+    }
+    .event__container .leftbox .event__content {
+        padding: 20px;
+    }
+    .event__container .leftbox .event__content h2 {
+         font-size: 30px; 
+    }
+    .event__container .events ul {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    .event__container .events ul li {
+        height: auto;
+        background: rgba(255, 255, 255, .8);
+    }
+    .event__container .events ul li .event__date {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    .event__container .events ul li .event__date h4 {
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .event__container .events ul li .event__date h4 span {
+        font-size: 20px;
+    }
+    .event__container .events ul li .event__details {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+    .event__container .events ul li .event__details a {
+        padding: 5px 10px;
+    }
+}
