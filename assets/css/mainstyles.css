@@ -546,6 +546,48 @@
     width: 100%;
 }
 
+/* Download app section */
+.app__img {
+    width: 48px;
+    display: flex;
+    align-items: center;
+}
+  
+img {
+    width: 100%;
+}
+  
+.app__wrapper {
+    background: #262626;
+    color: #E1E1E1 !important;
+    height: 48px;
+    margin-bottom: 30px;
+    padding: 32px 16px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.app__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+  
+.app__content {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 18px;
+    flex-direction: column;
+    width: 140px;
+}
+
 /* Footer */
 .footer__container{
 	max-width: 1170px;
