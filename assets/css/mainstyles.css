@@ -8,6 +8,66 @@
     list-style: none;
 }
 
+/* About section */
+.about__container {
+    margin-top: 10%;
+}
+  
+.about__container h2 {
+    font-size: 52px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+  
+.about__nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+  
+.about__nav .about__box {
+    background: #24262b;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #e91e63;  
+    position: relative;
+}
+  
+.about__nav .about__box h3 {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 50px;
+}
+  
+.about__nav .about__box p.about {
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+  
+.about__nav .about__box .about__img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+}
+  
+.about__nav .about__box .about__img img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
 /* Event section */
 .event__container {
     width: 100%;
