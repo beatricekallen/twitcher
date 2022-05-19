@@ -110,6 +110,24 @@ nav .brand-logo {
   padding: 5px;
 }
 
+/* Hero */
+.hero {
+  background-image: url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: 25% 65%;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.hero__div {
+  margin-top: 90px;
+}
+
+.hero__text {
+  color: var(--clr-bg);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
 /* Event section */
 .event__container {
   width: 100%;

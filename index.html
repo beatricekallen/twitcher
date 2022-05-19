@@ -1,39 +1,4 @@
-{{!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body class="flex-column min-100-vh">
-  <nav class="navbar">
-    <ul>
-      <li class="li-inline nav-item"><a href="/">Home</a></li>
-      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-      <li class="li-inline nav-item"><a href="/login">Login</a></li>
-      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
-    </ul>
-  </nav>
-  <header class="hero">
-    <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
-  </header>
-
-  <main class="col-auto">
-    {{{body}}}
-  </main>
-
-  <footer class="flex-row justify-center">
-    &copy; The Tech Blog Folks
-  </footer>
-</body>
-
-</html>
-<script src="/js/logout.js"></script> --}}
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -71,34 +36,22 @@
         <div class="nav__menu">
           <ul class="right hide-on-med-and-down nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
-                Home
-              </a>
+              <a href="#home" class="nav__link"> Home </a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">
-                About
-              </a>
+              <a href="#about" class="nav__link"> About </a>
             </li>
             <li class="nav__item">
-              <a href="#events" class="nav__link">
-                Events
-              </a>
+              <a href="#events" class="nav__link"> Events </a>
             </li>
             <li class="nav__item">
-              <a href="#resources" class="nav__link">
-                Resources
-              </a>
+              <a href="#resources" class="nav__link"> Resources </a>
             </li>
             <li class="nav__item">
-              <a href="#blog" class="nav__link">
-                Blog
-              </a>
+              <a href="#blog" class="nav__link"> Blog </a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                Contact Us
-              </a>
+              <a href="#contact" class="nav__link"> Contact Us </a>
             </li>
 
             <li>
@@ -116,15 +69,29 @@
 
           <!-- To toggle nav bar on mobile -->
           <!-- <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-regular fa-square-list"></i>
-                </div> -->
+                        <i class="fa-regular fa-square-list"></i>
+                    </div> -->
         </div>
       </nav>
     </header>
+
     <!-- ALL POSTS HTML START -->
 
     <main class="col-auto">
-      {{{body}}}
+      <!-- <div class="carousel carousel-slider" id="homepage-carousel">
+        <a class="carousel-item" href="#one!"
+          ><img src="./public/images/carousel-img-1.jpg"
+        /></a>
+        <a class="carousel-item" href="#two!"
+          ><img src="./public/images/carousel-img-2.jpg"
+        /></a>
+        <a class="carousel-item" href="#three!"
+          ><img src="./public/images/carousel-img-3.jpg"
+        /></a>
+        <a class="carousel-item" href="#four!"
+          ><img src="./public/images/carousel-img-4.jpg"
+        /></a>
+      </div> -->
     </main>
 
     <!-- ALL POSTS HTML END -->
@@ -184,9 +151,15 @@
             </div>
 
             <ul class="socials">
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -202,9 +175,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Materialize -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- JS -->
     <script src="./public/js/script.js"></script>
   </body>
