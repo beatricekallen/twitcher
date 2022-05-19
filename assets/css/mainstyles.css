@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -27,6 +27,13 @@
 /* General styles */
 body {
     background-color: var(--clr-bg);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /* Navigation */
@@ -37,6 +44,10 @@ nav {
 
 .navbar-fixed {
     height: 80px;
+}
+
+nav .brand-logo {
+    padding: 20px;
 }
 
 /* Home section */
@@ -517,8 +528,23 @@ nav {
     color: #686464;
 }
 
+/* info box section */
+#contact, .info__container {
+    margin: 0;
+}
+
+#contact {
+    display: flex;
+    padding: 0;
+}
+
 .info__container {
-    background: #e91e63;
+    background: var(--clr-box);
+    justify-content: center;
+}
+
+.info__container:hover {
+    background: var(--clr-hover);
 }
 
 .info__container h4 {
@@ -623,7 +649,7 @@ img {
 
 /* Footer */
 .footer__container{
-	max-width: 1170px;
+	width: 100%;
 	margin:auto;
 	line-height: 1.5;
 }
@@ -635,7 +661,9 @@ img {
 
 .footer{
 	background-color: #262626;
-    padding: 70px 0;
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
 }
 
 .footer-col{
@@ -703,6 +731,16 @@ img {
 /* Media queries */
 
 /* Small screens */
+@media (max-width: 360px) {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        width: 100%;
+        display: block;
+    }
+}
 
 /* Medium screens */
 @media (max-width: 768px) {
