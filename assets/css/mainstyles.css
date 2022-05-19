@@ -8,6 +8,37 @@
     list-style: none;
 }
 
+:root {
+    --ff-primary: ;
+    --ff-seconday: ;
+
+    --font-large: 700;
+    --font-medium: 500;
+
+    --clr-bg: #d7c2b0;
+    --clr-box: #0c4f4e;
+    --clr-hover: #9d442a;
+    --clr-title: ;
+    --clr-reg: ;
+
+    
+}
+
+/* General styles */
+body {
+    background-color: var(--clr-bg);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--clr-box);
+    /* height: 80px !important; */
+}
+
+.navbar-fixed {
+    height: 80px;
+}
+
 /* Home section */
 
 
