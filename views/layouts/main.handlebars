@@ -34,168 +34,172 @@
 </html>
 <script src="/js/logout.js"></script> --}}
 
-
-
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/mainstyles.css">
+    <link rel="stylesheet" href="/css/mainstyles.css" />
 
-    <title>Twitcher</title>    
-</head>
-<body>
+    <title>Twitcher</title>
+  </head>
+  <body>
     <!-- Navigation -->
     <header>
-        <nav class="nav__container navbar-fixed">
-            <a href="#" class="brand-logo">
-                <i class="fa-solid fa-feather-pointed"></i>
-            </a>
+      <nav class="nav__container navbar-fixed">
+        <a href="#" class="brand-logo">
+          <i class="fa-solid fa-feather-pointed"></i>
+        </a>
 
-            <div class="nav__menu">
-                <ul class="right hide-on-med-and-down nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            Home 
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#events" class="nav__link">
-                            Events
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#resources" class="nav__link">
-                            Resources
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#blog" class="nav__link">
-                            Blog 
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            Contact Us 
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <div class="login__button-container">
-                            <button class="login__button btn">Log In</button>                      
-                        </div>
-                    </li>
-                </ul>
-                <!-- <i class="fa-regular fa-circle-x nav__close" id="nav-close"></i> -->
-            </div>
+        <div class="nav__menu">
+          <ul class="right hide-on-med-and-down nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#events" class="nav__link">
+                Events
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#resources" class="nav__link">
+                Resources
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">
+                Blog
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                Contact Us
+              </a>
+            </li>
 
-            <div class="nav__buttons">
-                <!-- Night mode theme change button -->
-                <!-- <i class="fa-solid fa-moon"></i> -->
+            <li>
+              <div class="login__button-container">
+                <button class="login__button btn">Log In</button>
+              </div>
+            </li>
+          </ul>
+          <!-- <i class="fa-regular fa-circle-x nav__close" id="nav-close"></i> -->
+        </div>
 
-                <!-- To toggle nav bar on mobile -->
-                <!-- <div class="nav__toggle" id="nav-toggle">
+        <div class="nav__buttons">
+          <!-- Night mode theme change button -->
+          <!-- <i class="fa-solid fa-moon"></i> -->
+
+          <!-- To toggle nav bar on mobile -->
+          <!-- <div class="nav__toggle" id="nav-toggle">
                     <i class="fa-regular fa-square-list"></i>
                 </div> -->
-            </div>
-        </nav>
+        </div>
+      </nav>
     </header>
     <!-- ALL POSTS HTML START -->
 
     <main class="col-auto">
       {{{body}}}
     </main>
-    
+
     <!-- ALL POSTS HTML END -->
 
     <!-- Footer -->
     <footer class="footer row">
-        <div class="footer__container col s12">
-            <div class="footer__row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#resources">Rources</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><a href="#contact">Connect</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                        <li><a href="#">Log In</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="footer__container col s12">
+        <div class="footer__row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="#resources">Rources</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="#contact">Connect</a></li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Log In</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+          </div>
         </div>
-        <div id="contact" class="col">
-            <div class="card-panel info__container">
-                <h4>Contact Info</h4>
-                <div class="info__box">
-                    <div>
-                        <span><i class="fa-regular fa-location-dot"></i></span>
-                        <p>Raleigh, North Carolina <br />USA</p>
-                    </div>
-                    <div>
-                        <span><i class="fa-regular fa-envelope"></i></span>
-                        <a href="mailto:fakeemail@fake.com">tweetybird@gmail.com</a>
-                    </div>
-                    <div>
-                        <span><i class="fa-regular fa-phone"></i></span>
-                        <a href="tel:5555555555">555 555 5555</a>
-                    </div>
-                    
-                    <ul class="socials">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
+      </div>
+      <div id="contact" class="col">
+        <div class="card-panel info__container">
+          <h4>Contact Info</h4>
+          <div class="info__box">
+            <div>
+              <span><i class="fa-regular fa-location-dot"></i></span>
+              <p>Raleigh, North Carolina <br />USA</p>
             </div>
-        </div>
-        <!-- Scroll to the top -->
-    <a href="#" class="scroll__up" id="scroll-up">
-        <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
-    </a>
-   </footer>
+            <div>
+              <span><i class="fa-regular fa-envelope"></i></span>
+              <a href="mailto:fakeemail@fake.com">tweetybird@gmail.com</a>
+            </div>
+            <div>
+              <span><i class="fa-regular fa-phone"></i></span>
+              <a href="tel:5555555555">555 555 5555</a>
+            </div>
 
-    
+            <ul class="socials">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Scroll to the top -->
+      <a href="#" class="scroll__up" id="scroll-up">
+        <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
+      </a>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- JS -->
-    <script src="./assets/js/script.js"></script>
-</body>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
