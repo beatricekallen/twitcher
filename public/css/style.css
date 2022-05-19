@@ -20,6 +20,8 @@
   --clr-hover: #9d442a;
   --clr-title: ;
   --clr-reg: ;
+  --clr-gold: #bc804d;
+  --clr-light-green: #9eb5a3;
 }
 
 /* General styles */
@@ -727,6 +729,33 @@ img {
 .signup-login__heading {
   color: var(--clr-hover);
 }
+
+/* all-posts page */
+
+#all-posts {
+  align-items: center;
+}
+
+#blog-title {
+  color: var(--clr-gold);
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  justify-content: center;
+}
+
+.post-container {
+  margin: auto;
+}
+
+.post-card {
+  background-color: var(--clr-hover);
+}
+
+/* all-posts page end */
 
 /* Media queries */
 

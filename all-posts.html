@@ -12,7 +12,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/mainstyles.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 
     <title>Twitcher</title>    
 </head>
@@ -79,10 +79,60 @@
     </header>
     <!-- ALL POSTS HTML START -->
 
-    <main class="col-auto">
-      <div>
-          <h2>All-Posts</h2>
-      </div>
+    <main>
+        <!-- {{#if posts.length}} -->
+        <section id="all-posts">
+            <h1 id="blog-title">The Twitcher Blog</h1>
+            <!-- {{#each posts as |post|}} -->
+            <div class="row post">
+                <div class="col s12 m6 post-container">
+                    <div class="card post-card">
+                        <div class="card-content white-text">
+                            <span class="card-title">Post Title<!-- {{post.title}} --></span>
+                            <!-- {{#if post.birds.length}} -->
+                            <h3>
+                            <!-- {{#each post.birds as |bird|}} -->
+                            <!-- {{bird}} -->
+                            <!-- {{/each}} -->
+                            </h3>
+                                <p><!-- {{post.body}} -->Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Velit officia cumque, vel nostrum fugiat consectetur laborum dolor 
+                                tenetur necessitatibus nobis minima unde harum minus sequi accusamus 
+                                quibusdam esse ratione quam.
+                                </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row post">
+                <div class="col s12 m6 post-container">
+                    <div class="card post-card">
+                        <div class="card-content white-text">
+                            <span class="card-title">Post Title<!-- {{post.title}} --></span>
+                            <!-- {{#if post.birds.length}} -->
+                            <h3>
+                            <!-- {{#each post.birds as |bird|}} -->
+                            <!-- {{bird}} -->
+                            <!-- {{/each}} -->
+                            </h3>
+                                <p><!-- {{post.body}} -->Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Velit officia cumque, vel nostrum fugiat consectetur laborum dolor 
+                                tenetur necessitatibus nobis minima unde harum minus sequi accusamus 
+                                quibusdam esse ratione quam.
+                                </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="/">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- {{/each}} -->
+        </section>
     </main>
     
     <!-- ALL POSTS HTML END -->
