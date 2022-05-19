@@ -9,7 +9,7 @@ router.get("/", withAuth, async (req, res) => {
       where: {
         user_id: req.session.user_id,
       },
-      attributes: ["title", "body", "birds"],
+      attributes: ["title", "body", "birds", "created_at"],
       include: [
         {
           model: User,
@@ -37,7 +37,7 @@ router.get("/new", withAuth, (req, res) => {
 router.get("/edit/:id", withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
-      attributes: ["title", "body", "birds"],
+      attributes: ["title", "body", "birds", "created_at"],
       include: [
         {
           model: User,
