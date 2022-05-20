@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS bird_blog_db;
+DROP DATABASE IF EXISTS twitcher_db;
 
-CREATE DATABASE bird_blog_db;
+CREATE DATABASE twitcher_db;
