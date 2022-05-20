@@ -32,10 +32,6 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1 0 auto;
-}
-
 /* Navigation */
 nav {
   background-color: var(--clr-box);
