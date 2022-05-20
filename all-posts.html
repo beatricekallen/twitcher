@@ -80,21 +80,26 @@
     <!-- ALL POSTS HTML START -->
 
     <main>
-        <!-- {{#if posts.length}} -->
         <section id="all-posts">
             <h1 id="blog-title">The Twitcher Blog</h1>
+            <!-- {{#if posts.length}} -->
             <!-- {{#each posts as |post|}} -->
             <div class="row post">
-                <div class="col s12 m6 post-container">
+                <div class="col s12 m9 l6 post-container">
                     <div class="card post-card">
                         <div class="card-content white-text">
-                            <span class="card-title">Post Title<!-- {{post.title}} --></span>
+                            <span class="card-title">Great Day at Umstead Park!<!-- {{post.title}} --></span>
+                            <span class="post-author">By Lauren Lattanzi<!-- {{post.username}} --> on 5-19-2022<!-- {{format_date created_at}} --></span>
                             <!-- {{#if post.birds.length}} -->
-                            <h3>
+                            <ul class="bird-list">
                             <!-- {{#each post.birds as |bird|}} -->
-                            <!-- {{bird}} -->
+                            <li>
+                            <!-- {{bird}} -->Cardinal
+                            </li>
+                            <li>Blue Jay</li>
+                            <li>Raven</li>
                             <!-- {{/each}} -->
-                            </h3>
+                            </ul>
                                 <p><!-- {{post.body}} -->Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                                 Velit officia cumque, vel nostrum fugiat consectetur laborum dolor 
                                 tenetur necessitatibus nobis minima unde harum minus sequi accusamus 
@@ -109,7 +114,7 @@
             </div>
 
             <div class="row post">
-                <div class="col s12 m6 post-container">
+                <div class="col s12 m9 l6 post-container">
                     <div class="card post-card">
                         <div class="card-content white-text">
                             <span class="card-title">Post Title<!-- {{post.title}} --></span>

@@ -20,11 +20,39 @@ router.get("/", withAuth, async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
 
     res.render("all-posts", {
-      layout: "dashboard",
+      layout: "main",
       posts,
     });
   } catch (err) {
     res.redirect("login");
+  }
+});
+
+// get single post
+router.get('/post/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        User,
+        {
+          model: Comment,
+          include: [User],
+        },
+      ],
+    });
+
+    if (postData) {
+      // serialize the data
+      const post = postData.get({ plain: true });
+      res.render('single-post', { 
+        post,
+        layout: "main" 
+      });
+    } else {
+      res.status(404).end();
+    }
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
