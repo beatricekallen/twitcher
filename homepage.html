@@ -8,6 +8,8 @@
 
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Swiper CSS -->
@@ -19,12 +21,13 @@
 </head>
 <body>
     <!-- Navigation -->
-    <header>
-        <nav class="nav__container navbar-fixed">
-            <a href="#" class="brand-logo">
-                <i class="fa-solid fa-feather-pointed"></i>
-            </a>
-
+    <header class="navbar-fixed">
+        <nav class="nav__container sidenav-trigger">
+            <div class="nav">
+                <a href="#" class="brand-logo">
+                    <i class="fa-solid fa-feather-pointed"></i> Twitcher
+                </a>
+            </div>
             <div class="nav__menu">
                 <ul class="right hide-on-med-and-down nav__list">
                     <li class="nav__item">
@@ -80,21 +83,29 @@
     </header>
 
     <!-- Hero/Home -->
+<<<<<<< HEAD
     <hero class="hero">
+=======
+    <hero class="hero" id="home">
+>>>>>>> feature/css-edit
         <div class="hero__div">
           <h1 class="hero__text">
             The Triangle's home for birdwatchers and bird lovers
           </h1>
         </div>
     </hero>
+<<<<<<< HEAD
     <section class="home" id="home">
+=======
+    <section class="home" id="about">
+>>>>>>> feature/css-edit
         <div class="home__text">
             <h1>Bird Watchers <br /> of the Triangle</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.</p>
 
-            <button class="scroll__down">
-                Explore <i class="far fa-arrow-down"></i>
-            </button>
+            <a href="#events" class="scroll__down btn">
+                Explore <i class="uil uil-arrow-right"></i>
+            </a>
         </div>
 
         <div class="home__img">
@@ -103,44 +114,43 @@
     </section>
 
     <!-- About -->
-    <section class="about__container">
-        <h2>Read About Us Below</h2>
-
+    <section class="about__container" id="about">
+        <h2>Meet the Team</h2>
         <div class="about__nav">
             <div class="about__box">
                 <div class="about__img">
                     <img src="/" alt="">
                 </div>
-                <h3>About</h3>
+                <h3>Lauren Lattanzi</h3>
                 <p class="about">We are the bird watchers of the triangle</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-                <a href="#">Learn More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
             </div>
 
             <div class="about__box">
                 <div class="about__img">
                     <img src="/" alt="">
                 </div>
-                <h3>Events</h3>
+                <h3>Amy Nikitas</h3>
                 <p class="about">Join us on our bird watching adventures</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-                <a href="#">Learn More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
             </div>
           
             <div class="about__box">
                 <div class="about__img">
                     <img src="/" alt="">
                 </div>
-                <h3>Resources</h3>
+                <h3>Beatrice Allen</h3>
                 <p class="about">Learn more about birds with us down below</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-                <a href="#">Learn More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            </div>
+
+            <div class="about__box">
+                <div class="about__img">
+                    <img src="/" alt="">
+                </div>
+                <h3>Brittany Young</h3>
+                <p class="about">Learn more about birds with us down below</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
             </div>
         </div>
     </section>
@@ -260,102 +270,16 @@
             </div>
         </div>
     </section>
-
-    <!-- Blog (If logged in) -->
-    <!-- <section class="blog" id="blog">
-        <div class="blog__heading">
-            <h2>Blog</h2>           
-        </div>
-
-        <!-- Blog Container -->
-        <!-- <div class="blog__container"> -->
-
-            <!-- Blog 1 -->
-            <!-- <div class="blog__box">
-                <div class="blog__img img">
-                    <img src="" alt="">
-                </div>
-
-                <div class="blog__text">
-                    <span>July 18 2022 / Bird Spotting</span>
-                    <a href="#" class="blog__title">Bird Spotted in This Location</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                        ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="#">
-                        Read More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div> -->
-
-            <!-- Blog 2 -->
-            <!-- <div class="blog__box">
-                <div class="blog__img img">
-                    <img src="" alt="">
-                </div>
-
-                <div class="blog__text">
-                    <span>July 18 2022 / Bird Spotting</span>
-                    <a href="#" class="blog__title">Bird Spotted in This Location</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                        ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="#">
-                        Read More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div> -->
-
-            <!-- Blog 3 -->
-            <!-- <div class="blog__box">
-                <div class="blog__img img">
-                    <img src="" alt="">
-                </div>
-
-                <div class="blog__text">
-                    <span>July 18 2022 / Bird Spotting</span>
-                    <a href="#" class="blog__title">Bird Spotted in This Location</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                        ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="#">
-                        Read More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Login/Signup -->
-    <section>
-        <div class="login-signup">
-            <button class="log__button">
-                Log In <i class="fa-solid fa-cabin"></i>
-            </button>
-            <button class="sign__button">
-                Sign Up <i class="fa-solid fa-sign-hanging"></i> 
-            </button>
-        </div>
-    </section>
     
     <!-- Contact -->
-    <section class="contact__container">
-        <div class="contact__title">
-            <h3>Contact Us</h3>
-        </div>
-
+    <section class="contact__container" id="contact">
+        
         <div class="contact__box">
-            <!-- Form -->
-            <div class="contact form">
-                <h4>Send a message</h4>
+            <div class="contact__title">
+                <h3>Contact Us</h3>
             </div>
 
+            <!-- Form -->
             <div class="contact info">
                 <form>
                     <div class="form__box">
@@ -396,12 +320,6 @@
                     </div>
                 </form>
             </div>
-
-
-            <!-- Map -->
-            <!-- <div class="contact map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206205.88647913205!2d-79.94757392853589!3d36.14301733775983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531e9e0717dc31%3A0xf0cce50911f8e0e0!2sWild%20Birds%20Unlimited!5e0!3m2!1sen!2sus!4v1652900140265!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
         </div>
     </section>
 
@@ -409,7 +327,7 @@
     <section class="app__container">
         <a href="#" class="app__wrapper">
             <div class="app__img">
-                <img src="./assets/images/Apple-logo.png">
+                <img src="./public/images/Apple-logo.png">
             </div>
             <div class="app__content">
                 <h6>Download in the</h6>
@@ -419,7 +337,7 @@
       
         <a href="#" class="app__wrapper">
             <div class="app__img">
-                <img src="./assets/images/Google-play.png">
+                <img src="./public/images/Google-play.png">
             </div>
             <div class="app__content">
                 <h6>Android app on</h6>
@@ -428,14 +346,36 @@
         </a>
     </section>
 
+    <!-- Login/Signup -->
+    <section class="sticky__login brand-logo right" id="sticky-login">
+        <button class="close__login" id="close-login">
+            <i class="uil uil-times"></i>
+        </button>
+
+        <div class="login__container">
+            <div class="login__logo">
+                <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+
+            <div class="login__text">
+                <p>Join Twitcher.<br/>Log in to view our blog.</p>
+            </div>
+
+            <div class="log-sign__buttons">
+                <button class="log-in btn"><a href="/"></a>Log In</button>
+                <button class="sign-up btn"><a href="/"></a>Sign Up</button>
+            </div>
+        </div>
+    </section>
+
      <!-- Footer -->
      <footer class="footer row">
         <div class="footer__container col s12">
             <div class="footer__row">
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#resources">Rources</a></li>
                     </ul>
@@ -444,12 +384,12 @@
                     <h4>Contact Us</h4>
                     <ul>
                         <li><a href="#contact">Connect</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Log-in</a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>online shop</h4>
+                    <h4>Company</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -458,9 +398,9 @@
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"><i class="uil uil-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -470,35 +410,29 @@
                 <h4>Contact Info</h4>
                 <div class="info__box">
                     <div>
-                        <span><i class="fa-regular fa-location-dot"></i></span>
-                        <p>Raleigh, North Carolina <br />USA</p>
+                        <span><i class="uil uil-map-marker"></i></i></span>
+                        <p>Raleigh, North Carolina</p>
                     </div>
                     <div>
-                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span><i class="uil uil-envelope"></i></i></span>
                         <a href="mailto:fakeemail@fake.com">tweetybird@gmail.com</a>
                     </div>
                     <div>
-                        <span><i class="fa-regular fa-phone"></i></span>
+                        <span><i class="uil uil-phone"></i></i></span>
                         <a href="tel:5555555555">555 555 5555</a>
                     </div>
-                    
-                    <ul class="socials">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- Scroll to the top -->
-    <a href="#" class="scroll__up" id="scroll-up">
-        <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
-    </a>
+        </div>  
+       <!-- Scroll to the top -->
+        <!-- <a href="#" class="scroll__up" id="scroll-up">
+            <i class="uil uil-arrow-up"></i>
+        </a>  -->
    </footer>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- JS -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./public/js/script.js"></script>
 </body>
 </html>
