@@ -67,9 +67,21 @@ nav {
   background-color: var(--clr-dark-teal);
 }
 
-nav .brand-logo {
-  padding: 20px;
+
+
+.nav-brand-new {
+  padding-left: 20px;
 }
+
+.nav-menu-list {
+  padding-right: 20px;
+}
+
+.header_a_tag_display {
+  display: inline;
+  margin-right: 0;
+}
+
 
 /* Hero */
 .hero {
@@ -78,6 +90,8 @@ nav .brand-logo {
   background-position: 25% 65%;
   min-height: 50vh;
   justify-content: center;
+  font-family: var(--ff-primary);
+  color: var(--clr-bisque);
 }
 
 .hero__div {
@@ -568,14 +582,6 @@ nav .brand-logo {
   color: #fff;
 }
 
-.map {
-  padding: 0;
-}
-
-.map iframe {
-  width: 100%;
-}
-
 /* Download app section */
 .app__img {
   width: 48px;
@@ -667,6 +673,10 @@ img {
   width: 100%;
   margin: auto;
   line-height: 1.5;
+}
+
+.footer-padding {
+  padding-bottom: 75px !important;
 }
 
 .footer__row {
