@@ -28,6 +28,11 @@
   --clr-copper: #9d442a;
   --clr-dusty-gold: #bc804d;
   --clr-grove-green: #9eb5a3;
+
+  /* Margin bottom */
+  --mb-1: 16px;
+  --mb-2: 32px;
+  --mb-3: 48px;
 }
 
 /* Dark/light mode */
@@ -61,9 +66,30 @@ nav .brand-logo {
   padding: 20px;
 }
 
+/* Hero */
+.hero {
+  background-image: url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: 25% 65%;
+  min-height: 50vh;
+  justify-content: center;
+}
+
+.hero__div {
+  margin-top: 90px;
+}
+
+.hero__text {
+  color: var(--clr-bisque);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
 /* Home section */
 
-/* About section */
+
+/* Team section */
 .about__container {
   margin-top: 10%;
 }
@@ -269,6 +295,7 @@ nav .brand-logo {
   width: 100%;
   display: grid;
   place-items: center;
+  margin-bottom: 40px;
 }
 
 .resource__row {
@@ -570,6 +597,50 @@ img {
   width: 140px;
 }
 
+/* Log-in/Sign-up section */
+.sticky__login {
+  background-color: rgba(12, 79, 78, .5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+}
+
+.close__login {
+  position: absolute;
+  right: 20.8px;
+  bottom: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.close__login:hover {
+  border: none;
+  background-color: transparent;
+}
+
+.login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__logo {
+  font-size: 32px;
+  color: #fff;
+}
+
+.login__text {
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+
 /* Footer */
 .footer__container {
   width: 100%;
@@ -681,8 +752,6 @@ img {
   background-color: var(--clr-copper);
 }
 
-/* all-posts page end */
-
 /* Media queries */
 
 /* Small screens */
@@ -770,6 +839,7 @@ img {
 @media (min-width: 990px) {
   .resource__container {
     padding: 12px 48px;
+    margin-bottom: var(--mb-3);
   }
   .resource__column {
     flex: 0 0 33.33%;

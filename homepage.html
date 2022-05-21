@@ -19,8 +19,8 @@
 </head>
 <body>
     <!-- Navigation -->
-    <header>
-        <nav class="nav__container navbar-fixed sidenav-trigger">
+    <header class="navbar-fixed">
+        <nav class="nav__container sidenav-trigger">
             <div class="nav">
                 <a href="#" class="brand-logo">
                     <i class="fa-solid fa-feather-pointed nav__title"></i> Twitcher
@@ -81,20 +81,20 @@
     </header>
 
     <!-- Hero/Home -->
-    <!-- <hero class="hero">
+    <hero class="hero">
         <div class="hero__div">
           <h1 class="hero__text">
             The Triangle's home for birdwatchers and bird lovers
           </h1>
         </div>
-    </hero> -->
-    <section class="home" id="home">
+    </hero>
+    <section class="home" id="about">
         <div class="home__text">
             <h1>Bird Watchers <br /> of the Triangle</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.</p>
 
-            <button class="scroll__down">
-                Explore <i class="far fa-arrow-down"></i>
+            <button class="scroll__down btn">
+                Explore <i class="uil uil-arrow-down"></i>
             </button>
         </div>
 
@@ -262,16 +262,16 @@
     </section>
 
     <!-- Login/Signup -->
-    <section>
+    <!-- <section>
         <div class="login-signup">
-            <button class="log__button">
+            <button class="log__button btn">
                 Log In <i class="fa-solid fa-cabin"></i>
             </button>
-            <button class="sign__button">
+            <button class="sign__button btn">
                 Sign Up <i class="fa-solid fa-sign-hanging"></i> 
             </button>
         </div>
-    </section>
+    </section> -->
     
     <!-- Contact -->
     <section class="contact__container" id="contact">
@@ -325,12 +325,6 @@
                     </div>
                 </form>
             </div>
-
-
-            <!-- Map -->
-            <!-- <div class="contact map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206205.88647913205!2d-79.94757392853589!3d36.14301733775983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531e9e0717dc31%3A0xf0cce50911f8e0e0!2sWild%20Birds%20Unlimited!5e0!3m2!1sen!2sus!4v1652900140265!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
         </div>
     </section>
 
@@ -355,6 +349,28 @@
                 <p>Google Play</p>
             </div>
         </a>
+    </section>
+
+    <!-- Login/Signup -->
+    <section class="sticky__login brand-logo right" id="sticky-login">
+        <button class="close__login" id="close-login">
+            <i class="uil uil-times"></i>
+        </button>
+
+        <div class="login__container">
+            <div class="login__logo">
+                <i class="uil uil-trees"></i>
+            </div>
+
+            <div class="login__text">
+                <p>Join Twitcher.<br/>Log in to view our blog.</p>
+            </div>
+
+            <div class="log-sign__buttons">
+                <button class="log-in btn"><a href="/"></a>Log In</button>
+                <button class="sign-up btn"><a href="/"></a>Sign Up</button>
+            </div>
+        </div>
     </section>
 
      <!-- Footer -->
@@ -422,6 +438,6 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- JS -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./public/js/script.js"></script>
 </body>
 </html>
