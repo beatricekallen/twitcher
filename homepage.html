@@ -8,8 +8,8 @@
 
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- CSS -->
@@ -20,11 +20,12 @@
 <body>
     <!-- Navigation -->
     <header>
-        <nav class="nav__container navbar-fixed">
-            <a href="#" class="brand-logo">
-                <i class="fa-solid fa-feather-pointed"></i>
-            </a>
-
+        <nav class="nav__container navbar-fixed sidenav-trigger">
+            <div class="nav">
+                <a href="#" class="brand-logo">
+                    <i class="fa-solid fa-feather-pointed nav__title"></i> Twitcher
+                </a>
+            </div>
             <div class="nav__menu">
                 <ul class="right hide-on-med-and-down nav__list">
                     <li class="nav__item">
@@ -80,6 +81,13 @@
     </header>
 
     <!-- Hero/Home -->
+    <!-- <hero class="hero">
+        <div class="hero__div">
+          <h1 class="hero__text">
+            The Triangle's home for birdwatchers and bird lovers
+          </h1>
+        </div>
+    </hero> -->
     <section class="home" id="home">
         <div class="home__text">
             <h1>Bird Watchers <br /> of the Triangle</h1>
@@ -97,43 +105,42 @@
 
     <!-- About -->
     <section class="about__container">
-        <h2>Read About Us Below</h2>
-
+        <h2>Meet the Team</h2>
         <div class="about__nav">
             <div class="about__box">
                 <div class="about__img">
                     <img src="/" alt="">
                 </div>
-                <h3>About</h3>
+                <h3>Lauren Lattanzi</h3>
                 <p class="about">We are the bird watchers of the triangle</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-                <a href="#">Learn More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
             </div>
 
             <div class="about__box">
                 <div class="about__img">
                     <img src="/" alt="">
                 </div>
-                <h3>Events</h3>
+                <h3>Amy Nikitas</h3>
                 <p class="about">Join us on our bird watching adventures</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-                <a href="#">Learn More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
             </div>
           
             <div class="about__box">
                 <div class="about__img">
                     <img src="/" alt="">
                 </div>
-                <h3>Resources</h3>
+                <h3>Beatrice Allen</h3>
                 <p class="about">Learn more about birds with us down below</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
-                <a href="#">Learn More
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            </div>
+
+            <div class="about__box">
+                <div class="about__img">
+                    <img src="/" alt="">
+                </div>
+                <h3>Brittany Young</h3>
+                <p class="about">Learn more about birds with us down below</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
             </div>
         </div>
     </section>
@@ -254,77 +261,6 @@
         </div>
     </section>
 
-    <!-- Blog (If logged in) -->
-    <!-- <section class="blog" id="blog">
-        <div class="blog__heading">
-            <h2>Blog</h2>           
-        </div>
-
-        <!-- Blog Container -->
-        <!-- <div class="blog__container"> -->
-
-            <!-- Blog 1 -->
-            <!-- <div class="blog__box">
-                <div class="blog__img img">
-                    <img src="" alt="">
-                </div>
-
-                <div class="blog__text">
-                    <span>July 18 2022 / Bird Spotting</span>
-                    <a href="#" class="blog__title">Bird Spotted in This Location</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                        ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="#">
-                        Read More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div> -->
-
-            <!-- Blog 2 -->
-            <!-- <div class="blog__box">
-                <div class="blog__img img">
-                    <img src="" alt="">
-                </div>
-
-                <div class="blog__text">
-                    <span>July 18 2022 / Bird Spotting</span>
-                    <a href="#" class="blog__title">Bird Spotted in This Location</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                        ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="#">
-                        Read More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div> -->
-
-            <!-- Blog 3 -->
-            <!-- <div class="blog__box">
-                <div class="blog__img img">
-                    <img src="" alt="">
-                </div>
-
-                <div class="blog__text">
-                    <span>July 18 2022 / Bird Spotting</span>
-                    <a href="#" class="blog__title">Bird Spotted in This Location</a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore 
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl 
-                        ut aliquip ex ea commodo consequat.
-                    </p>
-                    <a href="#">
-                        Read More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Login/Signup -->
     <section>
         <div class="login-signup">
@@ -402,7 +338,7 @@
     <section class="app__container">
         <a href="#" class="app__wrapper">
             <div class="app__img">
-                <img src="./assets/images/Apple-logo.png">
+                <img src="./public/images/Apple-logo.png">
             </div>
             <div class="app__content">
                 <h6>Download in the</h6>
@@ -412,7 +348,7 @@
       
         <a href="#" class="app__wrapper">
             <div class="app__img">
-                <img src="./assets/images/Google-play.png">
+                <img src="./public/images/Google-play.png">
             </div>
             <div class="app__content">
                 <h6>Android app on</h6>
@@ -451,9 +387,9 @@
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                        <a href="#"><i class="uil uil-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -463,30 +399,24 @@
                 <h4>Contact Info</h4>
                 <div class="info__box">
                     <div>
-                        <span><i class="fa-regular fa-location-dot"></i></span>
-                        <p>Raleigh, North Carolina <br />USA</p>
+                        <span><i class="uil uil-map-marker"></i></i></span>
+                        <p>Raleigh, North Carolina</p>
                     </div>
                     <div>
-                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span><i class="uil uil-envelope"></i></i></span>
                         <a href="mailto:fakeemail@fake.com">tweetybird@gmail.com</a>
                     </div>
                     <div>
-                        <span><i class="fa-regular fa-phone"></i></span>
+                        <span><i class="uil uil-phone"></i></i></span>
                         <a href="tel:5555555555">555 555 5555</a>
                     </div>
-                    
-                    <ul class="socials">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- Scroll to the top -->
-    <a href="#" class="scroll__up" id="scroll-up">
-        <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
-    </a>
+        </div>  
+       <!-- Scroll to the top -->
+        <!-- <a href="#" class="scroll__up" id="scroll-up">
+            <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
+        </a>  -->
    </footer>
 
     <!-- Swiper JS -->
