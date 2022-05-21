@@ -28,7 +28,7 @@ router.get("/", async (req, res) => {
 });
 
 // get single post
-router.get("/:id", async (req, res) => {
+router.get("/:id/", async (req, res) => {
   console.log("get by id route");
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -44,14 +44,14 @@ router.get("/:id", async (req, res) => {
     if (postData) {
       // serialize the data
       const post = postData.get({ plain: true });
-      console.log("--------");
-      console.log(post);
-      console.log("--------");
-      res.json(post);
-      // res.render("single-post", {
-      //   post,
-      //   layout: "main",
-      // });
+      // console.log("--------");
+      // console.log(post);
+      // console.log("--------");
+      // res.json(post);
+      res.render("single-post", {
+        post,
+        layout: "main",
+      });
     } else {
       res.status(404).end();
     }

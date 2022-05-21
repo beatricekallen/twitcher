@@ -14,6 +14,8 @@ router.get("/", (req, res) => {
 
 router.post("/", withAuth, (req, res) => {
   // expects => {comment_text: "comment text", user_id: #, post_id: #}
+  console.log(req.session.user_id);
+
   Comment.create({
     comment_text: req.body.comment_text,
     user_id: req.session.user_id,
