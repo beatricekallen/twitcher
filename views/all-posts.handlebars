@@ -1,31 +1,28 @@
-
 <section id="all-posts">
-    <h1 id="blog-title">The Twitcher Blog</h1>
-    {{#if posts.length}}
+  <h1 id="blog-title">The Twitcher Blog</h1>
+  {{#if posts.length}}
     {{#each posts as |post|}}
-    <div class="row post">
+      <div class="row post">
         <div class="col s12 m9 l6 post-container">
-            <div class="card post-card">
-                <div class="card-content white-text">
-                    <span class="card-title">{{post.title}}</span>
-                    <span class="post-author">{{post.user.username}} on {{format_date post.created_at}}</span>
-                    {{#if post.birds.length}}
-                    <ul class="bird-list">
-                        {{#each post.birds as |bird|}}
-                        <li>
-                            {{bird}}
-                        </li>
-                        {{/each}}
-                    </ul>
-                    {{/if}}
-                    <p>{{post.body}}</p>
-                </div>
-                <div class="card-action">
-                    <a href="/dashboard/post/{{post.id}}">Read More</a>
-                </div>
+          <div class="card post-card">
+            <div class="card-content white-text">
+              <span class="card-title">{{post.title}}</span>
+              <span class="post-author">{{post.user.username}}
+                on
+                {{format_date post.created_at}}</span>
+              <ul class="bird-list">
+                <li>
+                  {{post.birds}}
+                </li>
+              </ul>
+              <p>{{post.body}}</p>
             </div>
+            <div class="card-action">
+              <a href="/blog/{{post.id}}">Read More</a>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     {{/each}}
-    {{/if}}
+  {{/if}}
 </section>

@@ -1,9 +1,9 @@
-const router = require('express').Router();
-const { Post, Comment, User } = require('../models/');
+const router = require("express").Router();
+const { Post, Comment, User } = require("../models/");
 
 // render homepage
-router.get('/', async (req, res) => {
-  res.render('homepage')
+router.get("/", async (req, res) => {
+  res.render("homepage");
 });
 
 // // get all posts for homepage
@@ -22,45 +22,46 @@ router.get('/', async (req, res) => {
 //   }
 // });
 
-// // get single post
-// router.get('/post/:id', async (req, res) => {
-//   try {
-//     // what should we pass here? we need to get some data passed via the request body (something.something.id?)
-//     // change the model below, but not the findByPk method.
-//     const postData = await SomeModel.findByPk(????, {
-//       // helping you out with the include here, no changes necessary
-//       include: [
-//         User,
-//         {
-//           model: Comment,
-//           include: [User],
-//         },
-//       ],
-//     });
+// get single post
+router.get("/post/:id", async (req, res) => {
+  console.log("get by id route");
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        User,
+        {
+          model: Comment,
+          include: [User],
+        },
+      ],
+    });
 
-//     if (postData) {
-//       // serialize the data
-//       const post = postData.get({ plain: true });
-//       // which view should we render for a single-post?
-//       res.render('hmmmm what view should we render?', { post });
-//     } else {
-//       res.status(404).end();
-//     }
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
-// giving you the login and signup route pieces below, no changes needed.
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
+    if (postData) {
+      // serialize the data
+      const post = postData.get({ plain: true });
+      console.log("--------");
+      console.log(post);
+      console.log("--------");
+      res.render("single-post", {
+        post,
+        layout: "main",
+      });
+    } else {
+      res.status(404).end();
+    }
+  } catch (err) {
+    res.status(500).json(err);
   }
-  console.log('routing to login page')
-  res.render('login-signup');
 });
 
-
+// giving you the login and signup route pieces below, no changes needed.
+router.get("/login", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+  console.log("routing to login page");
+  res.render("login-signup");
+});
 
 module.exports = router;

@@ -1,31 +1,47 @@
-<article class="post">
-    <div class="title">
-        <a href="{{/post.id}}" target="_blank">{{post.title}}</a>
+<section id="all-posts">
+  <h1 id="blog-title">The Twitcher Blog</h1>
+  <div class="row post">
+    <div class="col s12 m9 l6 post-container">
+      <div class="card post-card">
+        <div class="card-content white-text">
+          <span class="card-title">{{post.title}}</span>
+          <span class="post-author">{{user.username}}
+            on
+            {{format_date post.createdAt}}</span>
+          <ul class="bird-list">
+            <li>
+              {{post.birds}}
+            </li>
+          </ul>
+          <p>{{post.body}}</p>
+        </div>
+        <div class="card-action">
+          <div class="comments">
+            {{#each post.comments as |comment|}}
+              <section class="comment">
+                <div class="meta">
+                  {{user.username}}
+                  on
+                  {{format_date createdAt}}:
+                  {{comment.comment_text}}
+                </div>
+              </section>
+            {{/each}}
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="meta">
-        by {{post.user.username}} on
-        {{post.created_at}}
-        |
-        <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
-    </div>
-</article>
+  </div>
+</section>
 
-<form class="comment-form">
-    <div>
-        </form><textarea name="comment-body"></textarea>
-    </div>
+<form class="comment-form" id="new-comment-form">
+  <div>
 
-    <div>
-        <button type="submit">add comment</button>
-    </div>
+    <textarea name="comment-body"></textarea>
+  </div>
+  <div>
+    <button type="submit" name="comment-body">add comment</button>
+  </div>
 </form>
 
-<div class="comments">
-    {{#each post.comments}}
-    <section class="comment">
-        <div class="meta">
-            {{user.username}} on {{created_at}}
-        </div>
-    </section>
-    {{/each}}
-</div>
+<script src="/js/comment.js"></script>

@@ -1,6 +1,7 @@
 const loginFormHandler = async function (event) {
-  console.log('Log in button pressed')
   event.preventDefault();
+
+  console.log("Log in button pressed");
 
   const usernameEl = document.querySelector("#username-input-login");
   const passwordEl = document.querySelector("#password-input-login");
@@ -14,8 +15,10 @@ const loginFormHandler = async function (event) {
     headers: { "Content-Type": "application/json" },
   });
 
+  console.log(response);
+
   if (response.ok) {
-    document.location.replace("/dashboard/");
+    document.location.replace("/");
   } else {
     alert("Failed to login");
   }
