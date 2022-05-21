@@ -17,7 +17,7 @@
   --h2-font-size: 24px;
   --h3-font-size: 20px;
   --h4-font-size: 16px;
-  --p-font-size: 14px;
+  --reg-font-size: 14px;
 
   --font-bold: 700;
   --font-medium: 500;
@@ -104,7 +104,7 @@ nav .brand-logo {
 .about__nav .about__box p.about {
   color: #ccc;
   margin: 12px 0;
-  font-size: var(--p-font-size);
+  font-size: var(--reg-font-size);
   text-transform: uppercase;
   font-family: var(--ff-secondary);
 }
@@ -129,8 +129,8 @@ nav .brand-logo {
 /* Event section */
 .event__container {
   width: 100%;
-  height: 100vh;
-  background: url();
+  height: 120vh;
+  background: url(../images/nighthawk-shoots-S8onLkFuZHY-unsplash.jpg);
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -145,14 +145,17 @@ nav .brand-logo {
 }
 
 .event__container .leftbox .event__content {
-  color: #fff;
+  color: var(--clr-dark-teal);
   background: var(--clr-dark-teal);
+  background: transparent;
+  border: 3px solid var(--clr-dark-teal);
   padding: 40px;  
   transition: 0.5s;
 }
 
 .event__container .leftbox .event__content:hover {
-  background: var(--clr-copper);
+  background: var(--clr-dark-teal);
+  color: #fff;
 }
 
 .event__container .leftbox .event__content h2 {
@@ -180,14 +183,14 @@ nav .brand-logo {
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
-  padding: 40px;
+  padding: 35px;
   box-sizing: border-box;
 }
 
 .event__container .events ul li {
   background: #fff;
   box-sizing: border-box;
-  height: 200px;
+  height: 230px;
   margin: 15px 0;
 }
 
@@ -226,6 +229,7 @@ nav .brand-logo {
 .event__container .events ul li .event__details {
   padding: 20px;
   background: #fff;
+  font-family: var(--ff-secondary);
   box-sizing: border-box;
   width: 70%;
   height: 100%;
@@ -242,12 +246,12 @@ nav .brand-logo {
   position: relative;
   margin: 10px 0 0;
   padding: 0;
-  font-size: var(--p-font-size);
+  font-size: var(--reg-font-size);
 }
 
 .event__container .events ul li .event__details a {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 5px 10px;
   border: 2px solid var(--clr-dark-teal);
   margin-top: 15px;
   font-size: 18px;
@@ -299,7 +303,7 @@ nav .brand-logo {
 
 .resource__container p {
   color: #575a7b;
-  font-size: var(--p-font-size);
+  font-size: var(--reg-font-size);
   line-height: 1.6;
   letter-spacing: 0.48px;
 }
@@ -479,7 +483,7 @@ nav .brand-logo {
 .info__container .info__box div span {
   min-width: 40px;
   height: 40px;
-  color: #fff;
+  color: var(--clr-grove-green);
   background: var(--clr-dark-teal);
   display: flex;
   justify-content: center;
@@ -490,11 +494,11 @@ nav .brand-logo {
 }
 
 .info__container .info__box div p {
-  color: #fff;
+  color: var(--clr-grove-green);
 }
 
 .info__container .info__box div a {
-  color: #fff;
+  color: var(--clr-grove-green);
   font-size: 17.6px;
 }
 
@@ -514,7 +518,7 @@ nav .brand-logo {
 }
 
 .socials li a:hover {
-  color: #686464;
+  color: #fff;
 }
 
 .map {
@@ -605,7 +609,7 @@ img {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: var(--clr-grove-green);
+  background-color: var(--clr-copper);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -618,15 +622,14 @@ img {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: var(--clr-grove-green);
   font-weight: 300;
-  color: #bbbbbb;
   display: block;
   transition: all 0.3s ease;
 }
 
 .footer-col ul li a:hover {
-  color: #ffffff;
+  color: #fff;
   padding-left: 8px;
 }
 
@@ -644,7 +647,7 @@ img {
 }
 
 .footer-col .social-links a:hover {
-  color: #24262b;
+  color: var(--clr-copper);
   background-color: #ffffff;
 }
 
