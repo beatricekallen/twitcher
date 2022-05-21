@@ -13,11 +13,11 @@
   --ff-primary: 'Bebas Neue', cursive;
   --ff-secondary: 'Yanone Kaffeesatz', sans-serif;
 
-  --h1-font-size: 36px;
-  --h2-font-size: 24px;
-  --h3-font-size: 20px;
-  --h4-font-size: 16px;
-  --reg-font-size: 14px;
+  --h1-font-size: 48px;
+  --h2-font-size: 32px;
+  --h3-font-size: 24px;
+  --h4-font-size: 20px;
+  --reg-font-size: 16px;
 
   --font-bold: 700;
   --font-medium: 500;
@@ -34,9 +34,6 @@
   --mb-2: 32px;
   --mb-3: 48px;
 }
-
-/* Dark/light mode */
-
 
 /* General styles */
 html {
@@ -55,6 +52,14 @@ main {
 }
 
 /* Buttons */
+.btn{
+  background-color: var(--clr-dark-teal);
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: var(--clr-copper);
+}
 
 
 /* Navigation */
@@ -99,6 +104,7 @@ nav .brand-logo {
   margin-bottom: 60px;
   text-align: center;
   font-family: var(--ff-primary);
+  color: var(--clr-dark-teal);
 }
 
 .about__nav {
@@ -160,6 +166,7 @@ nav .brand-logo {
   background-size: cover;
   margin: 0;
   padding: 0;
+  margin-bottom: var(--mb-3);
 }
 
 .event__container .leftbox {
@@ -186,6 +193,7 @@ nav .brand-logo {
 
 .event__container .leftbox .event__content h2 {
   font-size: var(--h2-font-size);
+  font-family: var(--ff-primary);
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -303,6 +311,12 @@ nav .brand-logo {
   flex-wrap: wrap;
 }
 
+.resource__row h2 {
+  font-family: var(--ff-primary);
+  font-size: var(--h2-font-size);
+  color: var(--clr-dark-teal);
+}
+
 .resource__column {
   width: 100%;
   padding: 0 16px 16px 16px;
@@ -371,30 +385,28 @@ nav .brand-logo {
   position: relative;
   width: 100%;
   padding: 40px 100px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--mb-2);
 }
 
 .contact__container .contact__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--h2-font-size);
 }
 
 .contact__container .contact__title h3 {
-  color: #e91e63;
-  font-weight: 500;
+  color: var(--clr-dark-teal);
+  font-weight: var(--font-medium);
+  font-size: var(--h3-font-size);
+  font-family: var(--ff-primary);
 }
 
 .contact__box {
   position: relative;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 5fr 4fr;
-  grid-template-areas:
-    "form info"
-    "form map";
   grid-gap: 20px;
-  margin-top: 20px;
+  width: 50%;
 }
 
 .contact {
@@ -408,16 +420,6 @@ nav .brand-logo {
   font-weight: 500;
   font-size: var(--h4-font-size);
   margin-bottom: 10px;
-}
-
-.form {
-  grid-area: form;
-}
-.info {
-  grid-area: form;
-}
-.map {
-  grid-area: form;
 }
 
 .form__box {
@@ -442,7 +444,7 @@ nav .brand-logo {
 }
 
 .input__box span {
-  color: #e91e63;
+  color: #fff;
   margin-top: 10px;
   margin-bottom: 5px;
 }
@@ -451,20 +453,20 @@ nav .brand-logo {
   padding: 10px;
   font-size: 17.6px;
   outline: none;
-  border: 1px solid #e91e63;
+  border: 1px solid var(--clr-grove-green);
 }
 
 .input__box textarea {
   padding: 10px;
   font-size: 17.6px;
   outline: none;
-  border: 1px solid #e91e63;
+  border: 1px solid var(--clr-grove-green);
   resize: none;
   min-height: 220px;
 }
 
 .input__box input[type="submit"] {
-  background: #e91e63;
+  background: var(--clr-grove-green);
   color: #fff;
   border: none;
   font-size: 17.6px;
@@ -606,17 +608,19 @@ img {
   display: flex;
   width: 100%;
   bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .close__login {
   position: absolute;
   right: 20.8px;
-  bottom: 8px;
   font-size: 24px;
   cursor: pointer;
   color: #fff;
   background-color: transparent;
   border: none;
+  vertical-align: middle;
 }
 
 .close__login:hover {
@@ -626,13 +630,12 @@ img {
 
 .login__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .login__logo {
   font-size: 32px;
   color: #fff;
+  margin-right: 20px;
 }
 
 .login__text {

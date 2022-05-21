@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- CSS -->
@@ -23,7 +25,7 @@
         <nav class="nav__container sidenav-trigger">
             <div class="nav">
                 <a href="#" class="brand-logo">
-                    <i class="fa-solid fa-feather-pointed nav__title"></i> Twitcher
+                    <i class="fa-solid fa-feather-pointed"></i> Twitcher
                 </a>
             </div>
             <div class="nav__menu">
@@ -81,7 +83,7 @@
     </header>
 
     <!-- Hero/Home -->
-    <hero class="hero">
+    <hero class="hero" id="home">
         <div class="hero__div">
           <h1 class="hero__text">
             The Triangle's home for birdwatchers and bird lovers
@@ -93,9 +95,9 @@
             <h1>Bird Watchers <br /> of the Triangle</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.</p>
 
-            <button class="scroll__down btn">
-                Explore <i class="uil uil-arrow-down"></i>
-            </button>
+            <a href="#events" class="scroll__down btn">
+                Explore <i class="uil uil-arrow-right"></i>
+            </a>
         </div>
 
         <div class="home__img">
@@ -104,7 +106,7 @@
     </section>
 
     <!-- About -->
-    <section class="about__container">
+    <section class="about__container" id="about">
         <h2>Meet the Team</h2>
         <div class="about__nav">
             <div class="about__box">
@@ -260,31 +262,16 @@
             </div>
         </div>
     </section>
-
-    <!-- Login/Signup -->
-    <!-- <section>
-        <div class="login-signup">
-            <button class="log__button btn">
-                Log In <i class="fa-solid fa-cabin"></i>
-            </button>
-            <button class="sign__button btn">
-                Sign Up <i class="fa-solid fa-sign-hanging"></i> 
-            </button>
-        </div>
-    </section> -->
     
     <!-- Contact -->
     <section class="contact__container" id="contact">
-        <div class="contact__title">
-            <h3>Contact Us</h3>
-        </div>
-
+        
         <div class="contact__box">
-            <!-- Form -->
-            <div class="contact form">
-                <h4>Send a message</h4>
+            <div class="contact__title">
+                <h3>Contact Us</h3>
             </div>
 
+            <!-- Form -->
             <div class="contact info">
                 <form>
                     <div class="form__box">
@@ -359,7 +346,7 @@
 
         <div class="login__container">
             <div class="login__logo">
-                <i class="uil uil-trees"></i>
+                <i class="fa-solid fa-feather-pointed"></i>
             </div>
 
             <div class="login__text">
@@ -431,7 +418,7 @@
         </div>  
        <!-- Scroll to the top -->
         <!-- <a href="#" class="scroll__up" id="scroll-up">
-            <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
+            <i class="uil uil-arrow-up"></i>
         </a>  -->
    </footer>
 
