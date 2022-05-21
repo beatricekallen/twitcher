@@ -5,9 +5,4 @@ function scrollUp() {
   if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
   else scrollUp.classList.remove("show-scroll");
 }
-<<<<<<< HEAD
-
 window.addEventListener("scroll", scrollUp);
-=======
-window.addEventListener("scroll", scrollUp);
->>>>>>> feature/css-edit

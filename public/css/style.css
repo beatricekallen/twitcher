@@ -22,15 +22,6 @@
   --font-bold: 700;
   --font-medium: 500;
 
-<<<<<<< HEAD
-  --clr-bg: #ebd7c5;
-  --clr-box: #0c4f4e;
-  --clr-hover: #9d442a;
-  --clr-title: ;
-  --clr-reg: ;
-  --clr-gold: #bc804d;
-  --clr-light-green: #cae0d1;
-=======
   /* Colors */
   --clr-bisque: #d7c2b0;
   --clr-dark-teal: #0c4f4e;
@@ -42,7 +33,6 @@
   --mb-1: 16px;
   --mb-2: 32px;
   --mb-3: 48px;
->>>>>>> feature/css-edit
 }
 
 /* General styles */
@@ -57,12 +47,6 @@ body {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-/* Navigation */
-nav {
-  background-color: var(--clr-box);
-  /* height: 80px !important; */
-=======
 main {
   flex: 1 0 auto;
 }
@@ -75,7 +59,6 @@ main {
 
 .btn:hover {
   background-color: var(--clr-copper);
->>>>>>> feature/css-edit
 }
 
 
@@ -790,7 +773,6 @@ img {
   background-color: var(--clr-copper);
 }
 
-<<<<<<< HEAD
 .card-title {
   font-weight: bold !important;
 }
@@ -816,8 +798,6 @@ img {
 
 /* all-posts page end */
 
-=======
->>>>>>> feature/css-edit
 /* Media queries */
 
 /* Small screens */
