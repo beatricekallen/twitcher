@@ -3,7 +3,7 @@ const { Post, User, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
 //get all posts
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
       attributes: ["id", "title", "body", "birds", "created_at"],
@@ -20,6 +20,7 @@ router.get("/", async (req, res) => {
     res.render("all-posts", {
       layout: "main",
       posts,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     console.log(err);
@@ -28,7 +29,7 @@ router.get("/", async (req, res) => {
 });
 
 // get single post
-router.get("/:id/", async (req, res) => {
+router.get("/:id/", withAuth, async (req, res) => {
   console.log("get by id route");
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -51,6 +52,7 @@ router.get("/:id/", async (req, res) => {
       res.render("single-post", {
         post,
         layout: "main",
+        loggedIn: req.session.loggedIn,
       });
     } else {
       res.status(404).end();
@@ -63,7 +65,8 @@ router.get("/:id/", async (req, res) => {
 //get new post page
 router.get("/new", withAuth, (req, res) => {
   res.render("new-post", {
-    layout: "dashboard",
+    layout: "main",
+    loggedIn: req.session.loggedIn,
   });
 });
 

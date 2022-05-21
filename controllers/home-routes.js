@@ -3,7 +3,9 @@ const { Post, Comment, User } = require("../models/");
 
 // render homepage
 router.get("/", async (req, res) => {
-  res.render("homepage");
+  res.render("homepage", {
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 // // get all posts for homepage
@@ -45,6 +47,7 @@ router.get("/post/:id", async (req, res) => {
       res.render("single-post", {
         post,
         layout: "main",
+        loggedIn: req.session.loggedIn,
       });
     } else {
       res.status(404).end();
@@ -61,7 +64,9 @@ router.get("/login", (req, res) => {
     return;
   }
   console.log("routing to login page");
-  res.render("login-signup");
+  res.render("login-signup", {
+    loggedIn: req.session.loggedIn,
+  });
 });
 
 module.exports = router;

@@ -102,11 +102,19 @@
             </li>
 
             <li>
-              <div class="login__button-container">
-                <a href="/login">
-                  <button class="login__button btn">Log In</button>
-                </a>
-              </div>
+              {{#if loggedIn}}
+                <div class="login__button-container">
+                  <a href="/" id="logout-link">
+                    <button class="login__button btn">Log Out</button>
+                  </a>
+                </div>
+              {{else}}
+                <div class="login__button-container">
+                  <a href="/login">
+                    <button class="login__button btn">Log In</button>
+                  </a>
+                </div>
+              {{/if}}
             </li>
           </ul>
           <!-- <i class="fa-regular fa-circle-x nav__close" id="nav-close"></i> -->
@@ -204,5 +212,6 @@
     ></script>
     <!-- JS -->
     <script src="/js/script.js"></script>
+    <script src="/js/logout.js"></script>
   </body>
 </html>

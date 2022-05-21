@@ -3,7 +3,7 @@ const { Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 //TODO: may need to update path for these routes
-router.get("/", (req, res) => {
+router.get("/", withAuth, (req, res) => {
   Comment.findAll()
     .then((dbCommentData) => res.json(dbCommentData))
     .catch((err) => {
