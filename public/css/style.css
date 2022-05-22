@@ -54,6 +54,7 @@ main {
 /* Buttons */
 .btn{
   background-color: var(--clr-dark-teal);
+  font-family: var(--ff-primary);
   color: #fff;
 }
 
@@ -61,13 +62,21 @@ main {
   background-color: var(--clr-copper);
 }
 
+.log-btn__container {
+  margin: 15px 15px 0 0;
+  padding: 5px 15px;
+  vertical-align: middle;
+}
 
 /* Navigation */
 nav {
   background-color: var(--clr-dark-teal);
+  font-family: var(--ff-primary);
 }
 
-
+nav h5 {
+  margin-left: 20px;
+}
 
 .nav-brand-new {
   padding-left: 20px;
@@ -81,7 +90,6 @@ nav {
   display: inline;
   margin-right: 0;
 }
-
 
 /* Hero */
 .hero {
@@ -106,7 +114,36 @@ nav {
 }
 
 /* Home section */
+.home {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 55%;
+  height: 50vh;
+}
 
+.home h1 {
+  font-family: var(--ff-primary);
+  font-size: var(--h1-font-size);
+  color: #fff;
+  align-items: left;
+  margin-left: 20px;
+}
+
+.home p {
+  font-family: var(--ff-secondary);
+  font-size: var(--reg-font-size);
+  color: #fff;
+  margin-left: 20px;
+}
+
+.scroll__down {
+  margin-left: 20px;
+}
+
+/* .home__img {
+  border: 1px solid var(--clr-dark-teal);
+} */
 
 /* Team section */
 .about__container {
@@ -170,24 +207,6 @@ nav {
   width: 100px;
   height: 100px;
   padding: 5px;
-}
-
-/* Hero */
-.hero {
-  background-image: url("../images/hero-img.jpg");
-  background-size: cover;
-  background-position: 25% 65%;
-  min-height: 50vh;
-  justify-content: center;
-}
-
-.hero__div {
-  margin-top: 90px;
-}
-
-.hero__text {
-  color: var(--clr-bg);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 /* Event section */
@@ -419,7 +438,6 @@ nav {
   padding: 40px 100px;
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--mb-2);
 }
 
 .contact__container .contact__title {
@@ -445,10 +463,10 @@ nav {
   padding: 40px;
   background: var(--clr-dark-teal);
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+  margin-bottom: var(--mb-3);
 }
 
 .contact h4 {
-  color: #e91e63;
   font-weight: 500;
   font-size: var(--h4-font-size);
   margin-bottom: 10px;
@@ -584,7 +602,7 @@ nav {
 
 /* Download app section */
 .app__img {
-  width: 48px;
+  width: 250px;
   display: flex;
   align-items: center;
 }
@@ -594,33 +612,23 @@ img {
 }
 
 .app__wrapper {
-  background: #24262b;
-  color: #e1e1e1 !important;
   height: 48px;
-  margin-bottom: 30px;
-  padding: 32px 16px;
-  border-radius: 4px;
+  margin-bottom: var(--mb-3);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .app__container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
   justify-content: center;
 }
 
 .app__content {
-  display: flex;
-  justify-content: flex-start;
   margin-left: 18px;
-  flex-direction: column;
   width: 140px;
+}
+
+.apple {
+  width: 210px;
 }
 
 /* Log-in/Sign-up section */
@@ -644,10 +652,9 @@ img {
   color: #fff;
   background-color: transparent;
   border: none;
-  vertical-align: middle;
 }
 
-.close__login:hover {
+.close__login:focus {
   border: none;
   background-color: transparent;
 }
@@ -659,12 +666,11 @@ img {
 .login__logo {
   font-size: 32px;
   color: #fff;
-  margin-right: 20px;
+  margin: 15px 15px 0 0;
 }
 
 .login__text {
   color: #fff;
-  width: 100%;
   text-align: left;
 }
 
@@ -805,8 +811,6 @@ img {
 .card-content p {
   color: var(--clr-bg);
 }
-
-/* all-posts page end */
 
 /* Media queries */
 
