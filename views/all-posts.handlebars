@@ -1,5 +1,6 @@
 <section id="all-posts">
   <h1 id="blog-title">The Twitcher Blog</h1>
+  <button type="submit" class="btn"><a href="/blog/new">Add a Post</a></button>
   {{#if posts.length}}
     {{#each posts as |post|}}
       <div class="row post">
@@ -12,6 +13,7 @@
                 {{format_date post.created_at}}</span>
               <ul class="bird-list">
                 <li>
+                  Birds spotted:
                   {{post.birds}}
                 </li>
               </ul>

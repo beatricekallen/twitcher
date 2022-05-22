@@ -63,7 +63,8 @@ router.get("/:id/", withAuth, async (req, res) => {
 });
 
 //get new post page
-router.get("/new", withAuth, (req, res) => {
+router.get("/new", (req, res) => {
+  console.log("new post page");
   res.render("new-post", {
     layout: "main",
     loggedIn: req.session.loggedIn,
