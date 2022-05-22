@@ -115,17 +115,18 @@ nav h5 {
 
 /* Home section */
 .home {
-  display: inline-block;
-  margin-top: 50px;
-  margin-left: 20px;
-  width: 55%;
-  height: 50vh;
+  margin-top: 50px; 
+  margin-bottom: var(--mb-3); 
+}
+
+.home1 {
+  margin-right: 130px;
 }
 
 .home h1 {
   font-family: var(--ff-primary);
   font-size: var(--h1-font-size);
-  color: #fff;
+  color: var(--clr-dark-teal);
   align-items: left;
   margin-left: 20px;
 }
@@ -133,21 +134,54 @@ nav h5 {
 .home p {
   font-family: var(--ff-secondary);
   font-size: var(--reg-font-size);
-  color: #fff;
+  color: var(--clr-dark-teal);
   margin-left: 20px;
+  margin-bottom: var(--mb-2);
 }
 
 .scroll__down {
   margin-left: 20px;
 }
 
-/* .home__img {
-  border: 1px solid var(--clr-dark-teal);
-} */
+.botd {
+  text-align: center;
+  height: 450px;
+  background-color: var(--clr-dark-teal);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.botd:hover {
+  background-color: var(--clr-copper);
+  transition: .3s;
+}
+
+.botd h3 {
+  font-family: var(--ff-primary);
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 5px;
+  color: var(--clr-dusty-gold);
+}
+
+.botd p {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.bird__icon {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.bird__img {
+  width: 100%;
+}
 
 /* Team section */
 .about__container {
-  margin-top: 10%;
+  margin-bottom: var(--mb-3);
 }
 
 .about__container h2 {
@@ -800,7 +834,7 @@ img {
 
 .bird-list li {
   padding: 0 10px;
-  color: var(--clr-light-green);
+  color: var(--clr-grove-green);
 }
 
 .post-author {
@@ -809,7 +843,7 @@ img {
 }
 
 .card-content p {
-  color: var(--clr-bg);
+  color: var(--clr-bisque);
 }
 
 /* Media queries */
