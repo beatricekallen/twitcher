@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz&display=swap");
 
 *,
 *::before,
@@ -10,8 +10,8 @@
 
 :root {
   /* Typography */
-  --ff-primary: 'Bebas Neue', cursive;
-  --ff-secondary: 'Yanone Kaffeesatz', sans-serif;
+  --ff-primary: "Bebas Neue", cursive;
+  --ff-secondary: "Yanone Kaffeesatz", sans-serif;
 
   --h1-font-size: 48px;
   --h2-font-size: 32px;
@@ -52,7 +52,7 @@ main {
 }
 
 /* Buttons */
-.btn{
+.btn {
   background-color: var(--clr-dark-teal);
   font-family: var(--ff-primary);
   color: #fff;
@@ -115,8 +115,8 @@ nav h5 {
 
 /* Home section */
 .home {
-  margin-top: 50px; 
-  margin-bottom: var(--mb-3); 
+  margin-top: 50px;
+  margin-bottom: var(--mb-3);
 }
 
 .home1 {
@@ -152,7 +152,7 @@ nav h5 {
 
 .botd:hover {
   background-color: var(--clr-copper);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .botd h3 {
@@ -236,11 +236,21 @@ nav h5 {
   border-radius: 50%;
   background: #fff;
 }
+/* 
+.about__img {
+  background-image: url("../images/bird-img-1.png");
+  background-size: cover;
+} */
 
 .about__nav .about__box .about__img img {
   width: 100px;
   height: 100px;
   padding: 5px;
+}
+
+.about__img img {
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 /* Event section */
@@ -267,7 +277,7 @@ nav h5 {
   background: var(--clr-dark-teal);
   background: transparent;
   border: 3px solid var(--clr-dark-teal);
-  padding: 40px;  
+  padding: 40px;
   transition: 0.5s;
 }
 
@@ -667,7 +677,7 @@ img {
 
 /* Log-in/Sign-up section */
 .sticky__login {
-  background-color: rgba(12, 79, 78, .5);
+  background-color: rgba(12, 79, 78, 0.5);
   backdrop-filter: blur(10px);
   position: fixed;
   overflow: hidden;
