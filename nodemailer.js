@@ -16,21 +16,33 @@ let transporter = nodemailer.createTransport({
   },
 });
 
-const mailingList = User.findAll({
-  attributes: ["email"],
-});
+const sendEmail = async () => {
+  try {
+    const users = await User.findAll({
+      attributes: ["email"],
+    });
 
-let mailOptions = {
-  from: "triangle.twitchers@gmail.com",
-  to: mailingList,
-  subject: "Nodemailer Project",
-  text: "Hi from your nodemailer project",
+    const mailingList = users
+      .map((user) => user.get({ plain: true }))
+      .map((user) => user.email);
+
+    console.log(mailingList);
+
+    let mailOptions = {
+      from: "triangle.twitchers@gmail.com",
+      to: [...mailingList, "ocskier@gmail.com"],
+      subject: "Nodemailer Project",
+      text: "Hi from your nodemailer project",
+    };
+
+    transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+        console.log("Error " + err);
+      } else {
+        console.log("Email sent successfully");
+      }
+    });
+  } catch (err) {}
 };
 
-transporter.sendMail(mailOptions, function (err, data) {
-  if (err) {
-    console.log("Error " + err);
-  } else {
-    console.log("Email sent successfully");
-  }
-});
+sendEmail();
