@@ -89,22 +89,35 @@
           </h1>
         </div>
     </hero>
-    <section class="home" id="about">
-        <div class="home__text">
-            <h1>Bird Watchers <br /> of the Triangle</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.</p>
+
+    <!-- About pt.1 -->
+    <section class="home row" id="about">
+        <div class="col s6 home1">
+            <h1>What is a Twitcher?</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia ratione, impedit dolore ipsam asperiores iste vel maxime porro quas voluptates reiciendis. Vitae minus culpa atque! Nobis ab voluptate tempora.
+            </p>
 
             <a href="#events" class="scroll__down btn">
-                Explore <i class="uil uil-arrow-right"></i>
+                Join Us <i class="uil uil-arrow-right"></i>
             </a>
         </div>
 
-        <div class="home__img">
-            <img src="/" alt="">
+        <div class="botd col s4">
+            <h3><i class="fa-solid fa-volume-high bird__icon"></i>Bird of The Day</h3>
+            <p class="bird__name" id="bird-name">Bird Name</p>
+            <p class="bird__description" id="bird-description">Brief bird description</p>
+            <div class="bird__img">
+                <img src="./public/images/carousel-img-2.jpg" alt="" id="bird-img">
+            </div>
         </div>
+        
     </section>
 
-    <!-- About -->
+    <!-- About pt.2 -->
     <section class="about__container" id="about">
         <h2>Meet the Team</h2>
         <div class="about__nav">
@@ -172,7 +185,7 @@
                             ut aliquip ex ea commodo consequat.
                         </p>
                         <a href="#">Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="uil uil-arrow-right"></i>
                         </a>
                     </div>
                     <div style="clear: both;"></div>
@@ -189,7 +202,7 @@
                             ut aliquip ex ea commodo consequat.
                         </p>
                         <a href="#">Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="uil uil-arrow-right"></i>
                         </a>
                     </div>
                     <div style="clear: both;"></div>
@@ -206,7 +219,7 @@
                             ut aliquip ex ea commodo consequat.
                         </p>
                         <a href="#">Learn More
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="uil uil-arrow-right"></i>
                         </a>
                     </div>
                     <div style="clear: both;"></div>
@@ -224,7 +237,7 @@
             <div class="resource__column">
                 <div class="resource__card">
                     <div class="resource__icon">
-                        <i class="far fa-file-word"></i>
+                        <i class="fa-solid fa-list"></i>
                     </div>
                     <h3>Species</h3>
                     <p>
@@ -237,7 +250,7 @@
             <div class="resource__column">
                 <div class="resource__card">
                     <div class="resource__icon">
-                        <i class="far fa-tshirt"></i>
+                        <i class="fa-regular fa-file-word"></i>
                     </div>
                     <h3>Termonology</h3>
                     <p>
@@ -250,7 +263,7 @@
             <div class="resource__column">
                 <div class="resource__card">
                     <div class="resource__icon">
-                        <i class="far fa-map-marked"></i>
+                        <i class="fa-regular fa-map"></i>
                     </div>
                     <h3>Locations</h3>
                     <p>
@@ -317,22 +330,14 @@
     <!-- App download link -->
     <section class="app__container">
         <a href="#" class="app__wrapper">
-            <div class="app__img">
-                <img src="./public/images/Apple-logo.png">
-            </div>
-            <div class="app__content">
-                <h6>Download in the</h6>
-                <p>App Store</p>
+            <div class="app__img apple">
+                <img src="./public/images/256x256.png">
             </div>
         </a>
       
         <a href="#" class="app__wrapper">
             <div class="app__img">
-                <img src="./public/images/Google-play.png">
-            </div>
-            <div class="app__content">
-                <h6>Android app on</h6>
-                <p>Google Play</p>
+                <img src="./public/images/google-play-badge-removebg-preview.png">
             </div>
         </a>
     </section>
@@ -352,9 +357,8 @@
                 <p>Join Twitcher.<br/>Log in to view our blog.</p>
             </div>
 
-            <div class="log-sign__buttons">
+            <div class="log-btn__container">
                 <button class="log-in btn"><a href="/"></a>Log In</button>
-                <button class="sign-up btn"><a href="/"></a>Sign Up</button>
             </div>
         </div>
     </section>
