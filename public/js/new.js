@@ -2,6 +2,7 @@ const newFormHandler = async function (event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="post-title"]').value;
+  const birds = document.querySelector('input[name="post-birds"]').value;
   const body = document.querySelector('textarea[name="post-body"]').value;
 
   await fetch(`/api/post`, {
@@ -9,6 +10,7 @@ const newFormHandler = async function (event) {
     body: JSON.stringify({
       title,
       body,
+      birds,
     }),
     headers: { "Content-Type": "application/json" },
   });

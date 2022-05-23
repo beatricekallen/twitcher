@@ -131,7 +131,13 @@
         </div>
       </nav>
     </header>
-
+    <hero class="hero">
+      <div class="hero__div">
+        <h1 class="hero__text">
+          The Triangle's home for birdwatchers and bird lovers
+        </h1>
+      </div>
+    </hero>
     {{{body}}}
 
     <!-- Footer -->
@@ -212,6 +218,8 @@
     ></script>
     <!-- JS -->
     <script src="/js/script.js"></script>
-    <script src="/js/logout.js"></script>
+    {{#if loggedIn}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
   </body>
 </html>

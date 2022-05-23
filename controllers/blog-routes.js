@@ -28,6 +28,15 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
+//get new post page
+router.get("/new", (req, res) => {
+  console.log("new post page");
+  res.render("new-post", {
+    layout: "main",
+    loggedIn: req.session.loggedIn,
+  });
+});
+
 // get single post
 router.get("/:id/", withAuth, async (req, res) => {
   console.log("get by id route");
@@ -60,14 +69,6 @@ router.get("/:id/", withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
-
-//get new post page
-router.get("/new", withAuth, (req, res) => {
-  res.render("new-post", {
-    layout: "main",
-    loggedIn: req.session.loggedIn,
-  });
 });
 
 // router.get("/edit/:id", withAuth, async (req, res) => {
