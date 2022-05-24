@@ -1,9 +1,34 @@
 const router = require('express').Router();
 const { Post, Comment, User } = require('../models/');
+const axios = require('axios');
 
 // render homepage
 router.get('/', async (req, res) => {
-  res.render('homepage')
+
+  // let eBirdURL = "https://api.ebird.org/v2/ref/taxonomy/ebird?fmt=json&cat=species"
+
+  // axios.get(eBirdURL)
+  //   .then(function (response) {
+  //     const data = response.data;
+  //     let birdIndex = Math.floor(Math.random() * data.length);
+  //     console.log(data[birdIndex]);
+  //     birdCommonName = data[birdIndex].comName
+  //     birdScientificName = data[birdIndex].sciName
+  //     birdFamily = data[birdIndex].familyComName
+  //     axios.get(`https://serpapi.com/playground?q=${birdCommonName}&tbm=isch&ijn=0`)
+  //       .then(({ data: imgData }) => {
+  //         console.log('-------------')
+  //         console.log(imgData.images_results);
+  //       })
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //       res.render('homepage')
+  //     });
+      
+      res.render('homepage')
+
+
 });
 
 // // get all posts for homepage

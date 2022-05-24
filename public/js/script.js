@@ -9,7 +9,7 @@ let birdCommonName = " ",
    birdFamily = " "
 
 // eBird API key
-const apiKey = "96kajpv2hctt"
+const eBirdKey = "96kajpv2hctt"
 // eBird API url
 const eBirdURL = "https://api.ebird.org/v2/ref/taxonomy/ebird"
 // eBird random birl url
@@ -28,16 +28,24 @@ let getBirdData = function () {
        if (response.ok) {
          response.json().then(function (data) {
            let birdIndex = Math.floor(Math.random() * data.length);
-            birdCommonName = data[birdIndex].comName
+           console.log(data[birdIndex]);
+           birdCommonName = data[birdIndex].comName
            birdScientificName = data[birdIndex].sciName
            birdFamily = data[birdIndex].familyComName
 
-           birdName.textContent = birdCommonName
-           birdDescription.textContent = birdScientificName + ", " + birdFamily
+            // fetch(``)
+            //    .then(data => data.json())
+            //    .then(data => {
+            //       console.log(data);
+            //    })
 
-           
+
+         //   birdName.textContent = birdCommonName
+         //   birdDescription.textContent = birdScientificName + ", " + birdFamily
+
+
       
-           console.log(birdCommonName, birdScientificName, birdFamily);
+         //   console.log(birdCommonName, birdScientificName, birdFamily);
          });
        } else {
          modalWindowEl.setAttribute("class", "is-active");
