@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Custom Search JSON API Example</title>
+</head>
+​
+<body>
+  <form id="search-form" type="submit">
+    <input id="search-input" type="text" />
+    <button id="search-button" type="submit">Search</button>
+  </form>
+  <div id="content"></div>
+​
+​
+  <script>
+    const contentDivEl = document.querySelector('#content');
+    const searchForm = document.querySelector('#search-form');
+    const inputEl = document.querySelector('#search-input');
+​
+    const search = () => {
+      event.preventDefault();
+      fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAjCiOUt3sF9XYeGSGK9N1DKYZPGj-is7c&cx=c5dfc36930162300f&q=${inputEl.value}`)
+        .then(data => data.json())
+        .then(response => {
+          const src = response.items[0].pagemap.cse_image[0].src;
+          const img = `<img src=${src} />`
+          contentDivEl.innerHTML = img;
+        })
+    }
+​
+    searchForm.addEventListener('submit', search);
+​
+  </script>
+</body>
+​
+</html>
