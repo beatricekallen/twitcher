@@ -35,7 +35,7 @@ const getBirdData = function () {
        return selectedBird
      }).then(res => {
       console.log(res)
-      fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAjCiOUt3sF9XYeGSGK9N1DKYZPGj-is7c&cx=c5dfc36930162300f&q=${res.comName}`)
+      fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyAjCiOUt3sF9XYeGSGK9N1DKYZPGj-is7c&cx=c5dfc36930162300f&q=${res.comName} bird images`)
         .then(data => data.json())
         .then(gresponse => {
           console.log(gresponse)
