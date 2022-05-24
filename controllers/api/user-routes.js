@@ -5,11 +5,13 @@ router.post("/", async (req, res) => {
   try {
     const newUser = await User.create({
       username: req.body.username,
+      email: req.body.email,
       password: req.body.password,
     });
 
     req.session.save(() => {
       req.session.user_id = newUser.id;
+      req.session.email = newUser.email;
       req.session.username = newUser.username;
       req.session.loggedIn = true;
 
@@ -17,6 +19,7 @@ router.post("/", async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
+    console.log(err);
   }
 });
 
