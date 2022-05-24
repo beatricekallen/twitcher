@@ -78,6 +78,10 @@ nav h5 {
   margin-left: 20px;
 }
 
+nav p {
+  margin: 2px;
+}
+
 .nav-brand-new {
   padding-left: 20px;
 }
@@ -816,6 +820,7 @@ img {
 
 #blog-title {
   color: var(--clr-dusty-gold);
+  font-family: var(--ff-primary);
   display: flex;
   justify-content: center;
 }
@@ -854,6 +859,16 @@ img {
 
 .card-content p {
   color: var(--clr-bisque);
+}
+
+.new-post-btn {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.comment-textarea {
+  padding: 15px 0;
 }
 
 /* Media queries */

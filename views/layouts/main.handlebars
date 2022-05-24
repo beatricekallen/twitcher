@@ -62,11 +62,13 @@
   </head>
   <body>
     <!-- Navigation -->
-    <header>
+    {{!-- <header>
       <nav class="nav__container navbar-fixed">
-        <a href="#" class="brand-logo">
-          <i class="fa-solid fa-feather-pointed"></i>
-        </a>
+        <div class="nav__menu">
+          <a href="#" class="brand-logo">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <p>Triangle Twitchers</p>
+          </a></div>
 
         <div class="nav__menu">
           <ul class="right hide-on-med-and-down nav__list">
@@ -130,7 +132,68 @@
                 </div> -->
         </div>
       </nav>
+    </header> --}}
+
+    <!-- new header -->
+
+    <header class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="nav-brand-new">
+            <i class="fa-solid fa-feather-pointed header_a_tag_display"></i>
+            <h5 class="header_a_tag_display">Twitcher</h5>
+          </a>
+          <ul class="right hide-on-med-and-down nav__list nav-menu-list">
+            <li class="nav__item">
+              <a href="/" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#events" class="nav__link">
+                Events
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#resources" class="nav__link">
+                Resources
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/blog" class="nav__link">
+                Blog
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                Contact Us
+              </a>
+            </li>
+
+            <li>
+              {{#if loggedIn}}
+
+                <button class="login__button btn"><a
+                    href="/"
+                    id="logout-link"
+                  >Log Out</a></button>
+
+              {{else}}
+
+                <button class="login__button btn"><a href="/login">Log In</a></button>
+
+              {{/if}}
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
+
     <hero class="hero">
       <div class="hero__div">
         <h1 class="hero__text">
@@ -149,15 +212,17 @@
             <ul>
               <li><a href="#about">About Us</a></li>
               <li><a href="#events">Events</a></li>
-              <li><a href="#resources">Rources</a></li>
+              <li><a href="#resources">Sources</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Contact Us</h4>
             <ul>
               <li><a href="#contact">Connect</a></li>
-              <li><a href="/signup">Sign Up</a></li>
-              <li><a href="/login">Log In</a></li>
+              {{#unless loggedIn}}
+                <li><a href="/signup">Sign Up</a></li>
+                <li><a href="/login">Log In</a></li>
+              {{/unless}}
             </ul>
           </div>
           <div class="footer-col">

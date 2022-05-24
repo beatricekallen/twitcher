@@ -1,6 +1,10 @@
 <section id="all-posts">
   <h1 id="blog-title">The Twitcher Blog</h1>
-  <button type="submit" class="btn"><a href="/blog/new">Add a Post</a></button>
+  <div class="row container">
+    <div class="col s12 new-post-btn"><a href="/blog/new"><button
+          type="submit"
+          class="btn"
+        >Add a Post</button></a></div></div>
   {{#if posts.length}}
     {{#each posts as |post|}}
       <div class="row post">

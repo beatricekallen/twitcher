@@ -5,11 +5,12 @@
       <div class="card post-card">
         <div class="card-content white-text">
           <span class="card-title">{{post.title}}</span>
-          <span class="post-author">{{user.username}}
+          <span class="post-author">{{post.user.username}}
             on
             {{format_date post.createdAt}}</span>
           <ul class="bird-list">
             <li>
+              Birds spotted:
               {{post.birds}}
             </li>
           </ul>
@@ -28,20 +29,18 @@
               </section>
             {{/each}}
           </div>
+          <form class="comment-form" id="new-comment-form">
+            <div class="comment-textarea">
+              <textarea name="comment-body"></textarea>
+            </div>
+            <div>
+              <button type="submit" name="comment-body" class="btn">add comment</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<form class="comment-form" id="new-comment-form">
-  <div>
-
-    <textarea name="comment-body"></textarea>
-  </div>
-  <div>
-    <button type="submit" name="comment-body">add comment</button>
-  </div>
-</form>
 
 <script src="/js/comment.js"></script>

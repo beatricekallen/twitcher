@@ -160,7 +160,7 @@
                     <div class="resource__icon">
                         <i class="fa-regular fa-file-word"></i>
                     </div>
-                    <h3>Termonology</h3>
+                    <h3>Terminology</h3>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
                         consequatur necessitatibus eaque.
@@ -251,6 +251,7 @@
     </section>
 
     <!-- Login/Signup -->
+    {{#unless loggedIn}}
     <section class="sticky__login brand-logo right" id="sticky-login">
         <button class="close__login" id="close-login">
             <i class="uil uil-times"></i>
@@ -266,7 +267,8 @@
             </div>
 
             <div class="log-btn__container">
-                <button class="log-in btn"><a href="/login"></a>Log In</button>
+                <a href="/login"><button class="log-in btn">Log In</button></a>
             </div>
         </div>
     </section>
+    {{/unless}}
