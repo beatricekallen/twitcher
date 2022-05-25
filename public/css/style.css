@@ -818,7 +818,7 @@ img {
   align-items: center;
 }
 
-#blog-title {
+.blog-title {
   color: var(--clr-dusty-gold);
   font-family: var(--ff-primary);
   display: flex;
