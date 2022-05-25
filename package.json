@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "develop":"nodemon server.js",
+    "develop": "nodemon server.js",
     "seeds": "node seeds/index.js",
     "email": "node nodemailer.js"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/coding-boot-camp/module-14-project-mvc#readme",
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "connect-session-sequelize": "^6.1.1",
     "dotenv": "^8.6.0",
     "express": "^4.17.1",
@@ -32,7 +33,6 @@
   },
   "keywords": [],
   "devDependencies": {
-    "bcrypt": "^4.0.1",
     "nodemon": "^2.0.16"
   }
 }
