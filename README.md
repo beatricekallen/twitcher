@@ -1,4 +1,4 @@
-#Twitcher
+# Twitcher
 
 Twitcher is a website that allows birdwatching aficionados to collab online. Users can view upcoming events, resources for new birders, and a members-only blog where people can write about their birding experiences. The Bird of The Day feature on the homepage displays a new bird each day using API calls.
 
