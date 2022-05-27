@@ -156,7 +156,7 @@ nav p {
 
 .botd:hover {
   background-color: var(--clr-copper);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .botd h3 {
@@ -336,7 +336,7 @@ nav p {
   height: 100%;
   float: left;
   text-align: center;
-  transform: 0.5s;
+  transition: 0.5s;
 }
 
 .event__container .events ul li:hover .event__date {
@@ -595,6 +595,7 @@ nav p {
 
 .info__container:hover {
   background: var(--clr-dark-teal);
+  transition: 0.5s;
 }
 
 .info__container h4 {
@@ -743,6 +744,7 @@ img {
   display: flex;
   width: 100%;
   margin-bottom: 0;
+  padding-bottom: 75px;
 }
 
 .footer-col {
@@ -805,6 +807,10 @@ img {
 .footer-col .social-links a:hover {
   color: var(--clr-copper);
   background-color: #ffffff;
+}
+
+.social__icon::before {
+  line-height: unset;
 }
 
 /* Signup/login page */
