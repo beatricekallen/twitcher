@@ -124,7 +124,8 @@ nav p {
 }
 
 .home1 {
-  margin-right: 130px;
+  margin-right: 20px;
+  float: left !important;
 }
 
 .home h1 {
@@ -152,6 +153,7 @@ nav p {
   height: 450px;
   background-color: var(--clr-dark-teal);
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  margin: 20px;
 }
 
 .botd:hover {
@@ -181,6 +183,11 @@ nav p {
 
 .bird__img {
   width: 100%;
+}
+
+.bird__img img {
+  max-height: 280px;
+  max-width: 440px;
 }
 
 /* Team section */
@@ -824,7 +831,7 @@ img {
   align-items: center;
 }
 
-#blog-title {
+.blog-title {
   color: var(--clr-dusty-gold);
   font-family: var(--ff-primary);
   display: flex;
@@ -948,15 +955,39 @@ img {
     width: 100%;
     float: none;
     padding-left: 100px;
+    height: auto;
     background: transparent;
   }
   .event__container .events ul li .event__details a {
     padding: 5px 10px;
   }
 
+  /* .event__details {
+    max-height: 200px;
+  } */
+
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
+  }
+
+  .home {
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+
+  .home1 {
+    margin: auto;
+  }
+  /* 
+  .botd {
+    margin: auto;
+    flex: 1;
+  } */
+
+  header {
+    background-color: var(--clr-dark-teal);
   }
 }
 
