@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!-- Unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
@@ -27,14 +32,14 @@
   <body>
     <!-- Navigation -->
 
-    <header class="navbar-fixed">
-      <nav>
+    <header>
+      <nav class="navbar-fixed">
         <div class="nav-wrapper">
           <a href="#" class="nav-brand-new">
             <i class="fa-solid fa-feather-pointed header_a_tag_display"></i>
             <h5 class="header_a_tag_display">Twitcher</h5>
           </a>
-          <ul class="right hide-on-med-and-down nav__list nav-menu-list">
+          <ul class="right nav__list nav-menu-list">
             <li class="nav__item">
               <a href="/" class="nav__link">
                 Home
@@ -99,7 +104,7 @@
       <div class="footer__container col s12">
         <div class="footer__row">
           <div class="footer-col">
-            <h4>Company</h4>
+            <h4>Quick Links</h4>
             <ul>
               <li><a href="#about">About Us</a></li>
               <li><a href="#events">Events</a></li>
@@ -111,13 +116,12 @@
             <ul>
               <li><a href="#contact">Connect</a></li>
               {{#unless loggedIn}}
-                <li><a href="/signup">Sign Up</a></li>
                 <li><a href="/login">Log In</a></li>
               {{/unless}}
             </ul>
           </div>
           <div class="footer-col">
-            <h4>online shop</h4>
+            <h4>Company</h4>
             <ul>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Privacy Policy</a></li>
@@ -126,9 +130,15 @@
           <div class="footer-col">
             <h4>Follow Us</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i
+                  class="uil uil-facebook-f social__icon"
+                ></i></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><i
+                  class="uil uil-twitter social__icon"
+                ></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i
+                  class="uil uil-instagram social__icon"
+                ></i></a>
             </div>
           </div>
         </div>
@@ -138,30 +148,20 @@
           <h4>Contact Info</h4>
           <div class="info__box">
             <div>
-              <span><i class="fa-regular fa-location-dot"></i></span>
+              <span><i class="uil uil-map-marker"></i></span>
               <p>Raleigh, North Carolina</p>
             </div>
             <div>
-              <span><i class="fa-regular fa-envelope"></i></span>
+              <span><i class="uil uil-envelope"></i></span>
               <a href="mailto:fakeemail@fake.com">tweetybird@gmail.com</a>
             </div>
             <div>
-              <span><i class="fa-regular fa-phone"></i></span>
+              <span><i class="uil uil-phone"></i></span>
               <a href="tel:5555555555">555 555 5555</a>
             </div>
-
-            <ul class="socials">
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
           </div>
         </div>
       </div>
-      <!-- Scroll to the top -->
-      <a href="#" class="scroll__up" id="scroll-up">
-        <i class="fa-solid fa-arrow-up-from-line scroll__up-icon"></i>
-      </a>
     </footer>
 
     <!-- Swiper JS -->
